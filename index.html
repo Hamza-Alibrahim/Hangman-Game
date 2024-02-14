@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:;base64,=">
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="game-info">
+            <div class="game-name">Hangman</div>
+            <div class="category">
+                Word From: <select name="category">
+                    <option value="programming">Programming</option>
+                    <option value="movies">Movies</option>
+                    <option value="people">People</option>
+                    <option value="countries">Countries</option>
+                </select>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="letters"></div>
+            <div class="number"><span class="recent"></span> / <span class="all"></span></div>
+        </div>
+        <hr>
+        <div class="letters-guess"></div>
+    </div>
+    <div class="lose">
+        <span></span>
+    </div>
+    <div class="win">
+        <span>You Won</span>
+    </div>
+    <div class="c" onclick="changeword()"></div>
+    <audio id="success" src="audio/success_bell-6776.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/sadwhisle-91469.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>
